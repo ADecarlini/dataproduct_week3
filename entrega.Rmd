@@ -1,0 +1,19 @@
+---
+title: "Week 3 - project"
+author: "Me"
+date: "March 30th,  2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Some plotly graph
+```{r principalchunk, echo=TRUE, message=FALSE, warning=FALSE}
+library("plotly")
+x <- 10*(1:1200)
+plot_ly(x=x,y=log(x), type = "scatter", mode="markers", size=x, color=x)
+```
+
+## Thanks for watching
